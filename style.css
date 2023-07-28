@@ -1,0 +1,17 @@
+#header:target::before {
+    content: ""; /* Constrói um elemento "invisível" */
+    display: block;
+    height: 80px; /* Altura do espaçador */
+}
+
+#about:target::before {
+    content: ""; /* Constrói um elemento "invisível" */
+    display: block;
+    height: 50px; /* Altura do espaçador */
+}
+
+#resume:target::before {
+      content: ""; /* Constrói um elemento "invisível" */
+      display: block;
+      height: 50px; /* Altura do espaçador */
+}
