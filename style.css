@@ -24,3 +24,7 @@
     width: 180px;
     border-radius: 50%;
 }
+#ChangeCollorButton #input-Button {
+    width: 42px;
+    height: 24px;
+}
