@@ -24,3 +24,5 @@ if (window.innerWidth >= 992) {
 }
 
 document.querySelector("#ChangeCollorButton").onclick = changeColor;
+
+document.getElementById("year").innerHTML = new Date().getFullYear()
