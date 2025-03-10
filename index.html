@@ -1,345 +1,777 @@
 <!DOCTYPE html>
 <html lang="pt" data-bs-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Douglas Lima Barboza</title>
-  
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Douglas Lima Barboza</title>
 
-  <!-- link CSS -->
-  <link rel="stylesheet" href="./style.css">
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
 
-  <!-- SVGs font -->
-  <i class="bi bi-github"></i>
-  <i class="bi bi-linkedin"></i>
-  <i class="bi bi-house"></i>
-  <i class="bi bi-whatsapp"></i>
-  <i class="bi bi-envelope-at"></i>
-  <i class="bi bi-discord"></i>
-  <i class="bi bi-twitter"></i>
-  <i class="bi bi-instagram"></i>
-  <i class="bi bi-steam"></i>
-  <i class="bi bi-spotify"></i>
-</head>
-<body>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="./style.css" />
 
-  <div id="webpage" class="container" style="margin-top: 100px;">
+    <!-- SVGs font -->
+    <i class="bi bi-github"></i>
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-house"></i>
+    <i class="bi bi-whatsapp"></i>
+    <i class="bi bi-envelope-at"></i>
+    <i class="bi bi-discord"></i>
+    <i class="bi bi-twitter"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-steam"></i>
+    <i class="bi bi-spotify"></i>
+  </head>
+  <body>
+    <div id="webpage" class="container" style="margin-top: 100px">
+      <!-- Header -->
+      <section id="header">
+        <div class="container border-bottom fixed-top bg-dark">
+          <header class="py-3 align-items-start d-flex justify-content-center">
+            <!-- Shortcuts -->
+            <div class="col-11 d-flex justify-content-center">
+              <ul class="nav nav-pills d-flex flex-nowrap">
+                <li class="nav-item">
+                  <a href="#header" class="nav-link" aria-current="header"
+                    >Sobre</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#resume" class="nav-link" aria-current="resume"
+                    >Currículo</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#portfolio" class="nav-link" aria-current="about"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    id="links"
+                    class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    href="#"
+                    role="button"
+                    aria-expanded="false"
+                    >Links</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        style="text-align: justify"
+                        class="dropdown-item"
+                        href="https://github.com/douglimaonline"
+                        target="_blank"
+                      >
+                        <svg
+                          class="mx-1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-github"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                          />
+                        </svg>
+                        GitHub</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        id="Linkedin"
+                        style="text-align: justify"
+                        class="dropdown-item ps-4"
+                        href="https://www.linkedin.com/in/douglas-barboza/"
+                        target="_blank"
+                        ><svg
+                          class="me-1 pe-0"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-linkedin"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                          />
+                        </svg>
+                        Linkedin
+                      </a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        style="text-align: justify"
+                        class="dropdown-item ps-4"
+                        href="./public/Currículo Douglas Lima Barboza.pdf"
+                        target="_blank"
+                        >Currículo.pdf</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        style="text-align: justify"
+                        class="dropdown-item ps-4"
+                        href="./public/Currículo Douglas Lima Barboza.docx"
+                        target="_blank"
+                        >Currículo.doc</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
 
-    <!-- Header -->
-  <section id="header">
-    <div class="container border-bottom fixed-top bg-dark">
-        <header class="py-3 align-items-start d-flex justify-content-center">
-          
-          <!-- Shortcuts -->
-          <div class="col-11 d-flex justify-content-center">
-            <ul class="nav nav-pills d-flex flex-nowrap">
-              <li class="nav-item"><a href="#header" class="nav-link" aria-current="header">Sobre</a></li>
-              <li class="nav-item"><a href="#resume" class="nav-link" aria-current="resume">Currículo</a></li>
-              <li class="nav-item"><a href="#portfolio" class="nav-link" aria-current="about">Portfolio</a></li>
-              <li class="nav-item dropdown">
-                <a id="links" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Links</a>
-                <ul class="dropdown-menu">
-                    <li><a style="text-align: justify;" class="dropdown-item" href="https://github.com/douglimaonline" target="_blank"> <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>  GitHub</a></li>
-                  <li><a id="Linkedin" style="text-align: justify;" class="dropdown-item ps-4" href="https://www.linkedin.com/in/douglas-barboza/" target="_blank"><svg  class="me-1 pe-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                  </svg>  Linkedin  </a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a  style="text-align: justify;" class="dropdown-item ps-4" href="./public/Currículo Douglas Lima Barboza.pdf" target="_blank">Currículo.pdf</a></li>
-                  <li><a  style="text-align: justify;" class="dropdown-item ps-4" href="./public/Currículo Douglas Lima Barboza.docx" target="_blank">Currículo.doc</a></li>
-                </ul>
+            <!-- Theme Button -->
+            <div
+              id="ChangeCollorButton"
+              class="form-switch position-fixed bottom-0 end-0 mb-4 me-4"
+            >
+              <input
+                id="input-Button"
+                class="form-check-input bg-dark opacity-75"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckChecked"
+                checked
+              />
+              <label
+                id="label-Button"
+                class="form-check-label"
+                for="flexSwitchCheckChecked"
+              ></label>
+            </div>
+          </header>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div class="container px-0">
+          <div
+            class="row pe-lg-0 pt-lg-0 pt-sm-3 align-items-start rounded-3 border shadow gx-4 px-lg-0 me-lg-0"
+          >
+            <div class="col-lg-7 p-lg-5 pt-lg-5 me-0">
+              <div class="container pt-2 pt-lg-0">
+                <div class="d-flex justify-content-center p-4" id="foto">
+                  <img
+                    class="d-block d-lg-none"
+                    src="./images/eu_mobile.jpg"
+                    alt="foto_social"
+                  />
+                </div>
+                <h1
+                  class="display-lg-6 fw-bold lh-1 text-body-emphasis mb-lg-0 pb-lg-2 px-lg-0 text-center text-lg-start"
+                >
+                  Douglas Lima Barboza
+                </h1>
+                <h3 class="fw-bold lh-1 mb-4 pt-5 text-center text-lg-start">
+                  Desenvolvedor de Software
+                </h3>
+                <p class="lead">
+                  Atuo como desenvolver back-end em uma empresa que gera
+                  soluções através de tecnologia e engenharia. No momento estou
+                  desenvolvendo meus conhecimentos principalmente em Angular,
+                  Next, ReactJS e GraphQL.
+                </p>
+                <p class="lead mb-0">
+                  Também possuo conhecimento em Phyton (Pandas, Beautiful Soup e
+                  Tkinter), SQL/MySQL, HTML e CSS e Excel Avançado (VBA).
+                </p>
+              </div>
+
+              <!-- Contact -->
+              <section id="contact">
+                <div class="container px-lg-2 px-sm-5">
+                  <ul
+                    class="list-unstyled fw-normal border rounded-3 py-3 mt-5 mb-lg-0 mb-sm-4 mx-sm-5 mx-lg-0"
+                  >
+                    <h4
+                      class="pb-3 border-bottom fw-bold text-body-emphasis text-center"
+                    >
+                      Contatos
+                    </h4>
+                    <div id="contact" class="container ms-3">
+                      <li class="pt-2">
+                        <svg
+                          class="me-1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-house"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"
+                          />
+                        </svg>
+                        Rio de Janeiro, RJ
+                      </li>
+                      <li class="my-2">
+                        <svg
+                          class="me-1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-whatsapp"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                          />
+                        </svg>
+                        +55(21) 96866-7507
+                      </li>
+                      <li class="my-2">
+                        <svg
+                          class="me-1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-discord"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"
+                          />
+                        </svg>
+                        .douglasbarboza
+                      </li>
+                      <li class="my-2">
+                        <svg
+                          class="me-1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-envelope-at"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"
+                          />
+                          <path
+                            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"
+                          />
+                        </svg>
+                        douglimaonline@gmail.com
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <div
+              class="col-lg-5 p-0 overflow-hidden shadow-lg d-none d-lg-block"
+            >
+              <img
+                class="rounded-3 mt-0 pe-0"
+                src="./images/eu.jpg"
+                alt="foto_social"
+                width="550"
+                height="830px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GitHub Stats -->
+      <section id="GitHub-Status">
+        <div class="container rounded-3 border mt-5">
+          <div id="portfolio title">
+            <span
+              class="fw-bold mb-lg-2 pt-3 text-body-emphasis d-flex justify-content-center"
+              ><h1>Status do GitHub</h1></span
+            >
+          </div>
+          <div
+            id="GitHub-Infos"
+            class="d-lg-flex flex-lg-row flex-sm-column justify-content-lg-around"
+          >
+            <img
+              id="GitHub-Status"
+              class="mb-5"
+              alt="status"
+              src="https://github-readme-stats.vercel.app/api?username=douglimaonline&hide=contribs&show_icons=true&theme=transparent&hide_border=true&title_color=FFFFFF&hide_rank=true&custom_title=Estatísticas do GitHub&card_width=320&locale=pt-br"
+            />
+            <img
+              id="GitHub-Lenguages"
+              alt="most_used_lenguages"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=douglimaonline&layout=donut&theme=transparent&hide_border=true&title_color=FFFFFF&include_all_commits=true&langs_count=7&custom_title=Linguagens mais usadas&hide=Rich+Text+Format,html"
+            />
+          </div>
+          <div class="d-flex justify-content-end pb-2">
+            <a
+              href="https://learn.microsoft.com/en-us/dotnet/csharp/"
+              target="_blank"
+              ><img
+                alt="csharp-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+            /></a>
+            <a href="https://learn.microsoft.com/en-us/dotnet/" target="_blank"
+              ><img
+                alt="bootstrap-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+            /></a>
+            <a href="https://www.w3schools.com/sql/" target="_blank"
+              ><img
+                alt="bootstrap-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"
+            /></a>
+            <a href="https://www.python.org/" target="_blank"
+              ><img
+                alt="python-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            /></a>
+            <a href="https://angular.dev/" target="_blank"
+              ><img
+                alt="angular-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg"
+            /></a>
+            <a href="https://react.dev/" target="_blank"
+              ><img
+                alt="react-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+            /></a>
+            <a href="https://nextjs.org/" target="_blank"
+              ><img
+                alt="next-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg"
+            /></a>
+            <a href="https://code.visualstudio.com/" target="_blank"
+              ><img
+                alt="bootstrap-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+            /></a>
+            <a href="https://azure.microsoft.com/en-us/" target="_blank"
+              ><img
+                alt="bootstrap-icon"
+                height="24"
+                width="32"
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume -->
+      <section id="resume">
+        <div class="container">
+          <div class="flex-shrink-0 p-3 rounded-3 border mt-5">
+            <div
+              class="d-flex align-items-center justify-content-center text-decoration-none"
+            >
+              <svg class="bi pe-none me-2" width="30" height="24">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+              <span class="fw-bold mb-4 pt-2 text-body-emphasis hidden"
+                ><h1>Currículo</h1></span
+              >
+            </div>
+            <ul class="list-unstyled ps-0">
+              <!-- Radix -->
+              <li class="mb-1">
+                <div
+                  class="ps-3 d-inline-flex align-items-center rounded border-0"
+                >
+                  <h4 class="hidden">Radix</h4>
+                </div>
+                <div class="collapse.show ps-3" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                    <li
+                      class="d-inline-flex text-decoration-none rounded hidden"
+                    >
+                      De 10/2023 até o momento
+                    </li>
+                    <p class="hidden">
+                      Atribuições: Desenvolvimento em C# ASP.NET, Next-ReactJS e
+                      Angular para criação de novas features e manutenção dos
+                      códigos. <br />
+                      Atuo em clientes de energia em projetos Data Architecture
+                      e Desenvolvimento de Aplicações.
+                    </p>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- Eneva -->
+              <li class="mb-1">
+                <div
+                  class="ps-3 d-inline-flex align-items-center rounded border-0"
+                >
+                  <h4 class="hidden">Eneva S.A</h4>
+                </div>
+                <div class="collapse.show ps-3" id="home-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                    <li class="text-decoration-none rounded hidden">
+                      De 05/2018 a 05/2023
+                    </li>
+                    <p class="hidden">
+                      Atribuições: Realizar apuração de IR e CS no Lucro Real,
+                      PIS e COFINS no Regime Não-cumulativo, cálculos de Lucro
+                      da Exploração.<br />Elaboração de DIRF, DCTF, REINF,
+                      DCTFweb, DCOMP, EFD-Contribuições e ECF. Apuração de
+                      retidos na fonte de tributos federais, rotina paralegal,
+                      pedido e acompanhamento de benefícios fiscais como a
+                      SUDENE e regimes especiais como REIDI, resposta à Autos de
+                      Infração de órgãos federais e atendimento à auditoria
+                      externa.<br />Desenvolvimento de soluções para
+                      automatização do processo de trabalho em conjunto com
+                      profissionais de tecnologia.
+                    </p>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- Deloitte -->
+              <li class="mb-1">
+                <div
+                  class="ps-3 d-inline-flex align-items-center rounded border-0"
+                >
+                  <h4 class="hidden">Deloitte Touche Tohmatsu</h4>
+                </div>
+                <div class="collapse.show ps-3" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
+                    <li
+                      class="d-inline-flex text-decoration-none rounded hidden"
+                    >
+                      De 06/2016 a 10/2017
+                    </li>
+                    <p class="hidden">
+                      Atribuições: Executar conciliação bancária, análise
+                      contábil e fechamento de balancete em clientes do ramo de
+                      Energia e Gás Onshore, primeiro contato com os sistemas
+                      ERP (SAP e Oracle). Lançamento de documentos fiscais e
+                      elaboração de DIRF.
+                    </p>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- courses and training -->
+              <li class="border-top my-3"></li>
+              <li class="mb-1">
+                <div
+                  class="ps-3 d-inline-flex align-items-center rounded border-0"
+                >
+                  <h4>Formação e Treinamentos</h4>
+                </div>
+                <div class="collapse.show" id="account-collapse">
+                  <ul class="btn-toggle-nav fw-normal pb-1 ps-4">
+                    <li class="py-2">
+                      Tecnologia em Análise e Desenvolvimento de Sistema |
+                      Faculdade Anhanguera | Previsão de conclusão em 07/2025.
+                    </li>
+                    <li class="py-2">
+                      Next.js e React - Curso Completo - Aprenda com Projetos |
+                      Udemy – Leonardo Leitão | Em andamento.
+                    </li>
+                    <li class="py-2">
+                      The Complete 2023 Web Development Bootcamp | Udemy – Dra.
+                      Angela Yu | Em andamento.
+                    </li>
+                    <li class="py-2">
+                      Cognite Data Fusion Fundamentals Assessment | Cognite |
+                      Concluído.
+                    </li>
+                    <li class="py-2">
+                      C# COMPLETO Programação Orientada a Objetos + Projetos |
+                      Udemy – Prof. Nélio Alves | Concluído.
+                    </li>
+                    <li class="py-2">
+                      C# Curso Completo: Do Básico ao Avançado | Udemy –
+                      Leonardo Leitão | Concluído.
+                    </li>
+                    <li class="py-2">
+                      Curso de Metodologias Ágeis | IBMEC | Concluído.
+                    </li>
+                    <li class="py-2">
+                      Pós-graduação em Tributação e Negócios | Universidade
+                      Presbiteriana Mackenzie | Concluído em 07/2022.
+                    </li>
+                    <li class="py-2">
+                      Bacharel em Ciências Contábeis | Universidade Estácio de
+                      Sá | Concluído em 09/2016.
+                    </li>
+                    <li class="py-2">Inglês Nível Intermediário</li>
+                    <li class="py-2">Excel Nível Avançado</li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </div>
-          
-          <!-- Theme Button -->
-          <div id="ChangeCollorButton" class="form-switch position-fixed bottom-0 end-0 mb-4 me-4">
-            <input id="input-Button" class="form-check-input bg-dark opacity-75" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-            <label id="label-Button" class="form-check-label" for="flexSwitchCheckChecked"></label>
-          </div>
-          
-        </header>
-    </div>
-  </section>
+        </div>
+      </section>
 
-
-  <!-- About -->
-  <section id="about">
-    <div class="container px-0">
-      <div class="row pe-lg-0 pt-lg-0 pt-sm-3 align-items-start rounded-3 border shadow gx-4 px-lg-0 me-lg-0">
-        <div class="col-lg-7 p-lg-5 pt-lg-5 me-0">
-          <div class="container pt-2 pt-lg-0">
-            <div class="d-flex justify-content-center p-4" id="foto">
-              <img class="d-block d-lg-none" src="./images/eu_mobile.jpg" alt="foto_social">
-            </div>
-            <h1 class="display-lg-6 fw-bold lh-1 text-body-emphasis mb-lg-0 pb-lg-2 px-lg-0 text-center text-lg-start">Douglas Lima Barboza</h1>
-            <h3 class="fw-bold lh-1 mb-4 pt-5 text-center text-lg-start">Desenvolvedor de Software</h3>
-            <p class="lead">Atuo como desenvolver back-end em uma empresa que gera soluções através de tecnologia e engenharia. No momento estou desenvolvendo meus conhecimentos principalmente em Angular, Next, ReactJS e GraphQL.</p>
-              <p class="lead mb-0">Também possuo conhecimento em Phyton (Pandas, Beautiful Soup e Tkinter), SQL/MySQL, HTML e CSS e Excel Avançado (VBA).</p>
+      <!-- portolio -->
+      <section id="portfolio">
+        <div class="container rounded-3 border mt-5">
+          <div id="portfolio title">
+            <span
+              class="fw-bold mb-lg-2 pt-3 text-body-emphasis d-flex justify-content-center"
+              ><h1>Portfolio</h1></span
+            >
           </div>
-           
-          <!-- Contact -->
-          <section id="contact">
-            <div class="container px-lg-2 px-sm-5">
-              <ul class="list-unstyled fw-normal border rounded-3 py-3 mt-5 mb-lg-0 mb-sm-4 mx-sm-5 mx-lg-0">
-                <h4 class="pb-3 border-bottom fw-bold text-body-emphasis text-center">Contatos</h4>
-                <div id="contact" class="container ms-3">
-                  <li class="pt-2"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
-                  </svg> Rio de Janeiro, RJ</li>
-                  <li class="my-2"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                  </svg> +55(21) 96866-7507</li>
-                  <li class="my-2"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
-                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
-                  </svg> .douglasbarboza</li>
-                  <li class="my-2"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
-                    <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-                  </svg> douglimaonline@gmail.com</li>
+
+          <!-- projects -->
+          <div class="container">
+            <div
+              class="d-flex pt-3 mb-lg-3 row flex-lg-row text-center flex-sm-column align-items-center justify-content-around"
+            >
+              <!-- Snake game -->
+              <div class="card mb-4 mb-lg-4" style="width: 300px">
+                <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
+                  Snake Game
+                </h4>
+                <div class="card-body">
+                  <h5 class="card-title pb-lg-3">
+                    Clássico Snake Game desenvolvido em python, realizado
+                    totalmente através a biblioteca Turtle.
+                  </h5>
+                  <a
+                    href="https://replit.com/@douglasLima9/Snake-Game?v=1"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Projeto Publicado</a
+                  >
                 </div>
-              </ul>
+              </div>
+
+              <!-- Brazilian States -->
+              <div class="card mb-4 mb-lg-4" style="width: 300px">
+                <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
+                  Brazilian States
+                </h4>
+                <div class="card-body">
+                  <h5 class="card-title pb-2">
+                    De quantos estados você se lembra? Projeto com bibliotecas
+                    Turtle e Pandas.
+                  </h5>
+                  <a
+                    href="https://replit.com/@douglasLima9/BrazilianStates?v=1"
+                    target="_blank"
+                    class="btn btn-secondary mt-1"
+                    >Projeto Publicado</a
+                  >
+                </div>
+              </div>
+
+              <!-- Pomodoro Timer -->
+              <div class="card mb-4 mb-lg-4" style="width: 300px">
+                <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
+                  Pomodoro Timer
+                </h4>
+                <div class="card-body">
+                  <h5 class="card-title pb-3">
+                    Gerenciador de tempo para técnica pomodoro, projeto GUI
+                    utilizando Tkinter framework.
+                  </h5>
+                  <a
+                    href="https://replit.com/@douglasLima9/PomodoroTimer?v=1"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Projeto Publicado</a
+                  >
+                </div>
+              </div>
+
+              <!-- Password Generator -->
+              <div class="card mb-4 mb-lg-4" style="width: 300px">
+                <h4 class="mt-2 pb-2 border-bottom fw-bold text-body-emphasis">
+                  Password Generator
+                </h4>
+                <div class="card-body">
+                  <h5 class="card-title pb-1">
+                    Um Gerador de senha, crie facilmente uma senha personalizada
+                    que atenda todos os requisitos.
+                  </h5>
+                  <a
+                    href="https://replit.com/@douglasLima9/PasswordGenerator?v=1"
+                    target="_blank"
+                    class="btn btn-secondary mt-2"
+                    >Projeto Publicado</a
+                  >
+                </div>
+              </div>
+
+              <!-- Higher Lower game -->
+              <div class="card mb-4 mb-lg-4" style="width: 300px">
+                <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
+                  Higher Lower
+                </h4>
+                <div class="card-body">
+                  <h5 class="card-title pb-4">
+                    Jogo que utiliza as webscraping framework e Pandas em
+                    python.
+                  </h5>
+                  <a
+                    href="https://replit.com/@douglasLima9/higherVSlower?v=1"
+                    target="_blank"
+                    class="btn btn-secondary mt-2"
+                    >Projeto Publicado</a
+                  >
+                </div>
+              </div>
+
+              <!-- Coffe Machine -->
+              <div class="card mb-4 mb-lg-4" style="width: 300px">
+                <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
+                  Coffee Machine
+                </h4>
+                <div class="card-body">
+                  <h5 class="card-title pb-2">
+                    Programa que simula o funcionamento de uma máquina de café
+                    em python.
+                  </h5>
+                  <a
+                    href="https://replit.com/@douglasLima9/CoffeeMachine?v=1"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Projeto Publicado</a
+                  >
+                </div>
+              </div>
+
+              <!-- Web Sales -->
+              <div class="card mb-4 mb-lg-4" style="width: 300px">
+                <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
+                  WEb Sales
+                </h4>
+                <div class="card-body">
+                  <h5 class="card-title pb-2">
+                    Um aplicativo desenvolvido em C# (ASP.NET MVC) para
+                    gerenciamento de vendas.
+                  </h5>
+                  <a
+                    href="https://github.com/douglimaonline/WebSales.git"
+                    target="_blank"
+                    class="btn btn-secondary"
+                    >Projeto no GitHub</a
+                  >
+                </div>
+              </div>
             </div>
-          </section>
+          </div>
+          <p>
+            <a
+              class="link-underline-dark d-flex justify-content-end text-decoration-none"
+              href="https://github.com/douglimaonline/Portfolio"
+              target="_blank"
+              >Projetos no GitHub</a
+            >
+          </p>
         </div>
-        <div class="col-lg-5 p-0 overflow-hidden shadow-lg d-none d-lg-block">
-            <img class="rounded-3 mt-0 pe-0" src="./images/eu.jpg" alt="foto_social" width="550" height="830px">
+      </section>
+
+      <!-- footer -->
+      <section id="footer">
+        <div>
+          <ul
+            class="nav col-md-8 justify-content-start list-unstyled d-inline-flex mt-1 mb-4 pt-2"
+          >
+            <li id="instagram" class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://www.instagram.com/douglimaonline/"
+                target="_blank"
+                ><svg
+                  class="bi"
+                  width="24"
+                  height="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                  /></svg
+              ></a>
+            </li>
+            <li id="spotify" class="ms-3">
+              <a
+                class="text-body-secondary"
+                href="https://open.spotify.com/user/12152435826"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  class="bi bi-spotify"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
         </div>
-      </div>
+
+        <div class="container-fluid border-top">
+          <footer
+            class="d-flex flex-wrap justify-content-between align-items-center pb-3 mt-1 mb-4"
+          >
+            <div class="col-md-4 d-flex align-items-center">
+              <div
+                href="/"
+                class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 pt-2"
+              >
+                ©<span
+                  id="year"
+                  class="mb-3 mb-md-0 text-body-secondary"
+                ></span>
+                Powered by bootstrap
+                <img
+                  height="24px"
+                  class="pb-2"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                />
+              </div>
+            </div>
+          </footer>
+        </div>
+      </section>
     </div>
-  </section>
 
-  
-  <!-- GitHub Stats -->
-  <section id="GitHub-Status">
-    <div class="container rounded-3 border mt-5">
-      <div id="portfolio title">
-        <span class="fw-bold mb-lg-2 pt-3 text-body-emphasis d-flex justify-content-center"><h1>Status do GitHub</h1></span>
-      </div>
-      <div id="GitHub-Infos" class="d-lg-flex flex-lg-row flex-sm-column justify-content-lg-around">
-        <img id="GitHub-Status" class="mb-5" alt="status" src="https://github-readme-stats.vercel.app/api?username=douglimaonline&hide=contribs&show_icons=true&theme=transparent&hide_border=true&title_color=FFFFFF&hide_rank=true&custom_title=Estatísticas do GitHub&card_width=320&locale=pt-br">
-        <img id="GitHub-Lenguages" alt="most_used_lenguages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=douglimaonline&layout=donut&theme=transparent&hide_border=true&title_color=FFFFFF&include_all_commits=true&langs_count=7&custom_title=Linguagens mais usadas&hide=Rich+Text+Format,html">
-      </div>
-      <div class="d-flex justify-content-end pb-2">
-        <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img alt="csharp-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" /></a>
-        <a href="https://learn.microsoft.com/en-us/dotnet/" target="_blank"><img alt="bootstrap-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" /></a>
-        <a href="https://www.w3schools.com/sql/" target="_blank"><img alt="bootstrap-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" /></a>
-        <a href="https://www.python.org/" target="_blank"><img alt="python-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" /></a>
-        <a href="https://angular.dev/" target="_blank"><img alt="angular-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" /></a>
-        <a href="https://react.dev/" target="_blank"><img alt="react-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" /></a>
-        <a href="https://nextjs.org/" target="_blank"><img alt="next-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" /></a>
-        <a href="https://code.visualstudio.com/" target="_blank"><img alt="bootstrap-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" /></a>
-        <a href="https://azure.microsoft.com/en-us/" target="_blank"><img alt="bootstrap-icon" height="24" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" /></a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Resume -->
-  <section id="resume">
-    <div class="container">
-      <div class="flex-shrink-0 p-3 rounded-3 border mt-5">
-        <div class="d-flex align-items-center justify-content-center text-decoration-none">
-          <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fw-bold mb-4 pt-2 text-body-emphasis hidden"><h1>Currículo</h1></span>
-        </div>
-        <ul class="list-unstyled ps-0">
-
-          <!-- Radix -->
-          <li class="mb-1">
-            <div class="ps-3 d-inline-flex align-items-center rounded border-0">
-              <h4 class="hidden">Radix</h4>
-            </div>
-            <div class="collapse.show ps-3" id="orders-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
-                  <li class="d-inline-flex text-decoration-none rounded hidden">De 10/2023 até o momento</li>
-                  <p class="hidden">Atribuições: Desenvolvimento em C# ASP.NET, Next-ReactJS e Angular para criação de novas features e manutenção dos códigos. <br /> Atuo em clientes de energia em projetos Data Architecture e Desenvolvimento de Aplicações.</p>
-              </ul>
-            </div>
-          </li>
-
-          <!-- Eneva -->
-          <li class="mb-1">
-            <div class="ps-3 d-inline-flex align-items-center rounded border-0">
-              <h4 class="hidden">Eneva S.A</h4>
-            </div>
-            <div class="collapse.show ps-3" id="home-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
-                <li class="text-decoration-none rounded hidden">De 05/2018 a 05/2023</li>
-                <p class="hidden">Atribuições: Realizar apuração de IR e CS no Lucro Real, PIS e COFINS no Regime Não-cumulativo, cálculos de Lucro da Exploração.<br />Elaboração de DIRF, DCTF, REINF, DCTFweb, DCOMP, EFD-Contribuições e ECF. Apuração de retidos na fonte de tributos federais, rotina paralegal, pedido e acompanhamento de benefícios fiscais como a SUDENE e regimes especiais como REIDI, resposta à Autos de Infração de órgãos federais e atendimento à auditoria externa.<br />Desenvolvimento de soluções para automatização do processo de trabalho em conjunto com profissionais de tecnologia.</p>
-              </ul>
-            </div>
-          </li>
-
-          <!-- Deloitte -->
-          <li class="mb-1">
-            <div class="ps-3 d-inline-flex align-items-center rounded border-0">
-              <h4 class="hidden">Deloitte Touche Tohmatsu</h4>
-            </div>
-            <div class="collapse.show ps-3" id="dashboard-collapse">
-              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1">
-                <li class="d-inline-flex text-decoration-none rounded hidden">De 06/2016 a 10/2017</li>
-                <p class="hidden">Atribuições: Executar conciliação bancária, análise contábil e fechamento de balancete em clientes do ramo de Energia e Gás Onshore, primeiro contato com os sistemas ERP (SAP e Oracle). Lançamento de documentos fiscais e elaboração de DIRF.</p>
-              </ul>
-            </div>
-          </li>
-          
-          <!-- courses and training -->
-          <li class="border-top my-3"></li>
-          <li class="mb-1">
-            <div class="ps-3 d-inline-flex align-items-center rounded border-0">
-              <h4>Formação e Treinamentos</h4>
-            </div>
-            <div class="collapse.show" id="account-collapse">
-              <ul class="btn-toggle-nav fw-normal pb-1 ps-4">
-                <li class="py-2">Tecnologia em Análise e Desenvolvimento de Sistema | Faculdade Anhanguera | Previsão de conclusão em 07/2025.</li>
-                <li class="py-2">Next.js e React - Curso Completo - Aprenda com Projetos | Udemy – Leonardo Leitão | Em andamento.</li>
-                <li class="py-2">The Complete 2023 Web Development Bootcamp | Udemy – Dra. Angela Yu | Em andamento.</li>
-                <li class="py-2">100 days of Code – The Complete Phyton Pro | Udemy – Dra. Angela Yu | Em andamento.</li>
-                <li class="py-2">C# COMPLETO Programação Orientada a Objetos + Projetos | Udemy – Prof. Nélio Alves | Concluído.</li>
-                <li class="py-2">C# Curso Completo: Do Básico ao Avançado | Udemy – Leonardo Leitão | Concluído.</li>
-                <li class="py-2">Curso de Metodologias Ágeis | IBMEC | Concluído.</li>
-                <li class="py-2">Pós-graduação em Tributação e Negócios | Universidade Presbiteriana Mackenzie | Concluído em 07/2022.</li>
-                <li class="py-2">Bacharel em Ciências Contábeis | Universidade Estácio de Sá | Concluído em 09/2016.</li>
-                <li class="py-2">Inglês Nível Intermediário</li>
-                <li class="py-2">Excel Nível Avançado</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- portolio -->
-  <section id="portfolio">
-    <div class="container rounded-3 border mt-5">
-      <div id="portfolio title">
-        <span class="fw-bold mb-lg-2 pt-3 text-body-emphasis d-flex justify-content-center"><h1>Portfolio</h1></span>
-      </div>
-
-
-      <!-- projects -->
-      <div class="container">
-        <div class="d-flex pt-3 mb-lg-3 row flex-lg-row text-center flex-sm-column align-items-center justify-content-around">
-
-          <!-- Snake game -->
-          <div class="card mb-4 mb-lg-4" style="width: 300px;">
-            <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
-              Snake Game
-            </h4>
-            <div class="card-body">
-              <h5 class="card-title pb-lg-3">Clássico Snake Game desenvolvido em python, realizado totalmente através a biblioteca Turtle.</h5>
-              <a href="https://replit.com/@douglasLima9/Snake-Game?v=1" target="_blank" class="btn btn-secondary">Projeto Publicado</a>
-            </div>
-          </div>
-          
-          <!-- Brazilian States -->
-          <div class="card mb-4 mb-lg-4" style="width: 300px;">
-            <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
-              Brazilian States
-            </h4>
-            <div class="card-body">
-              <h5 class="card-title pb-2">De quantos estados você se lembra? Projeto com bibliotecas Turtle e Pandas.</h5>
-              <a href="https://replit.com/@douglasLima9/BrazilianStates?v=1" target="_blank" class="btn btn-secondary mt-1">Projeto Publicado</a>
-            </div>
-          </div>
-          
-          <!-- Pomodoro Timer -->
-          <div class="card mb-4 mb-lg-4" style="width: 300px;">
-            <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
-              Pomodoro Timer
-            </h4>
-            <div class="card-body">
-              <h5 class="card-title pb-3">Gerenciador de tempo para técnica pomodoro, projeto GUI utilizando Tkinter framework.</h5>
-              <a href="https://replit.com/@douglasLima9/PomodoroTimer?v=1" target="_blank" class="btn btn-secondary">Projeto Publicado</a>
-            </div>
-          </div>
-
-          <!-- Password Generator -->
-          <div class="card mb-4 mb-lg-4" style="width: 300px;">
-            <h4 class="mt-2 pb-2 border-bottom fw-bold text-body-emphasis">
-              Password Generator
-            </h4>
-            <div class="card-body">
-              <h5 class="card-title pb-1">Um Gerador de senha, crie facilmente uma senha personalizada que atenda todos os requisitos.</h5>
-              <a href="https://replit.com/@douglasLima9/PasswordGenerator?v=1" target="_blank" class="btn btn-secondary mt-2">Projeto Publicado</a>
-            </div>
-          </div>
-
-          <!-- Higher Lower game -->
-          <div class="card mb-4 mb-lg-4" style="width: 300px;">
-            <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
-              Higher Lower
-            </h4>
-            <div class="card-body">
-              <h5 class="card-title pb-4">Jogo que utiliza as webscraping framework e Pandas em python.</h5>
-              <a href="https://replit.com/@douglasLima9/higherVSlower?v=1" target="_blank" class="btn btn-secondary mt-2">Projeto Publicado</a>
-            </div>
-          </div>
-
-          <!-- Coffe Machine -->
-          <div class="card mb-4 mb-lg-4" style="width: 300px;">
-            <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
-              Coffee Machine
-            </h4>
-            <div class="card-body">
-              <h5 class="card-title pb-2">Programa que simula o funcionamento de uma máquina de café em python.</h5>
-              <a href="https://replit.com/@douglasLima9/CoffeeMachine?v=1" target="_blank" class="btn btn-secondary">Projeto Publicado</a>
-            </div>
-          </div>
-
-          <!-- Web Sales -->
-          <div class="card mb-4 mb-lg-4" style="width: 300px;">
-            <h4 class="mt-2 pb-1 border-bottom fw-bold text-body-emphasis">
-              WEb Sales
-            </h4>
-            <div class="card-body">
-              <h5 class="card-title pb-2">Um aplicativo desenvolvido em C# (ASP.NET MVC) para gerenciamento de vendas.</h5>
-              <a href="https://github.com/douglimaonline/WebSales.git" target="_blank" class="btn btn-secondary">Projeto no GitHub</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <p><a class="link-underline-dark d-flex justify-content-end text-decoration-none" href="https://github.com/douglimaonline/Portfolio" target="_blank">Projetos no GitHub</a></p>
-    </div>
-  </section>
-
-
-<!-- footer -->
-<section id="footer">
-  <div>
-    <ul class="nav col-md-8 justify-content-start list-unstyled d-inline-flex mt-1 mb-4 pt-2">
-      <li id="instagram" class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/douglimaonline/" target="_blank"><svg class="bi" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-      </svg></a></li>
-      <li id="spotify" class="ms-3"><a class="text-body-secondary" href="https://open.spotify.com/user/12152435826" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
-        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
-      </svg></a></li>
-    </ul>
-  </div>
-
-  <div class="container-fluid border-top">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center pb-3 mt-1 mb-4">
-      <div class="col-md-4 d-flex align-items-center">
-        <div href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 pt-2">
-          ©<span id="year" class="mb-3 mb-md-0 text-body-secondary"></span> Powered by bootstrap
-        <img height="24px" class="pb-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-        </div>
-      </div>
-</footer>
-  </div>
-</section>
-  </div>  
-
-
-  <!-- javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-</body>
+    <!-- javascript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
 </html>
